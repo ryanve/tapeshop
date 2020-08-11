@@ -1,0 +1,129 @@
+html {
+  font-family: sans-serif;
+  font-size: calc(1em + 1vw + 1vh);
+  line-height: 1.33333;
+}
+
+body {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.loki { line-height: inherit; font-size: .666666rem }
+.noki { line-height: inherit; font-size: 1rem }
+.yoki { line-height: inherit; font-size: 2rem }
+.hiki { line-height: inherit; font-size: 2.666666rem }
+
+.diy {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.edgy {
+  padding-inline-start: .1em;
+  padding-inline-end: .1em;
+}
+
+.space-cadet {
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-block-start: calc(1rem + 1vh);
+  padding-block-end: calc(1rem + 1vh);
+  padding-inline-start: calc(2rem + 1vw);
+  padding-inline-end: calc(2rem + 1vw);
+}
+
+.space-list {
+  box-sizing: border-box;
+  margin-block-start: 1em;
+  margin-block-end: 2em;
+}
+
+.mb1 { margin-bottom: 1rem }
+.mb2 { margin-bottom: 2rem }
+
+.squeeze {
+  max-width: 20em;
+}
+
+::selection {
+  background: darkorange;
+  color: black;
+}
+
+.basis-quarter { flex-basis: 25% }
+.basis-half { flex-basis: 50% }
+.basis-full { flex-basis: 100% }
+.basis-fit { flex-basis: 100vmin }
+
+/**
+git.io/flexboxes
+npm.im/flexboxes
+**/
+.flex-fade {flex: 0 1 auto}
+.flex-fame {flex: 1 0 auto}
+.flex-auto {flex: 1 1 auto}
+.flex-none {flex: 0 0 auto}
+.flex-inline {display: inline-flex}
+.flex-block {display: flex}
+.flow-east {flex-direction: row}
+.flow-west {flex-direction: row-reverse}
+.flow-south {flex-direction: column}
+.flow-north {flex-direction: column-reverse}
+.flow-over {flex-wrap: nowrap}
+.flow-wrap {flex-wrap: wrap}
+.flow-warp {flex-wrap: wrap-reverse}
+
+
+/**
+github.com/ryanve/flow.css
+**/
+.inline-flow { display: inline }
+.inline-root { display: inline-block }
+.inline-flex { display: inline-block; display: inline-flex }
+.inline-grid { display: inline-block; display: inline-grid }
+.inline-table { display: inline-table }
+.block-flow { display: block }
+.block-root { display: block; display: flow-root }
+.block-flex { display: block; display: flex }
+.block-grid { display: block; display: grid }
+.block-table { display: table }
+.play-none { display: none }
+.play-tent { display: contents }
+[hidden] { display: none }
+
+/**
+got tape?
+https://s9a.github.io/tape
+https://github.com/s9a/tape
+**/
+:root {
+  --tape-white: #f5f5f5;
+  --tape-black: #090909;
+  --tape-pink: #fbbfff;
+  --tape-yellow: #eee833;
+  --tape-blue: #11dff1;
+  --tape-green: #44f477;}
+.tape-white { --tape-hex: var(--tape-white) }
+.tape-blue { --tape-hex: var(--tape-blue) }
+.tape-pink { --tape-hex: var(--tape-pink) }
+.tape-green { --tape-hex: var(--tape-green) }
+.tape-yellow { --tape-hex: var(--tape-yellow) }
+.tape-clean:not(.tape-clash),
+.tape-clean :not(.tape-clash) {
+  background: transparent;
+  color: inherit;}
+.tape-flat { border-color: transparent }
+.tape-flap { border-color: currentColor }
+.tape-blue,.tape-pink,.tape-green,.tape-yellow,.tape-white {
+  background: var(--tape-hex) !important;
+  color: var(--tape-black) !important;}
+.tape-black {
+  background: var(--tape-black) !important;
+  color: var(--tape-hex, var(--tape-white)) !important;}
